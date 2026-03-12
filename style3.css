@@ -1,0 +1,45 @@
+body {
+  background: url(https://getwallpapers.com/wallpaper/full/8/e/1/920338-large-space-wallpaper-1920x1200-for-phones.jpg)
+    no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 20px;
+  margin: 0;
+}
+.digit {
+  font-size: 70px;
+  margin: 30px;
+}
+.frame {
+  height: 400px;
+  width: 600px;
+  background: #57c785;
+  background: radial-gradient(
+    circle,
+    rgba(87, 199, 133, 1) 50%,
+    rgb(93, 237, 83) 100%
+  );
+  opacity: 80%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+button {
+  width: 110px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+}

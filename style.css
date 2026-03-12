@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: inter;
+  font-size: 35px;
+  color: white;
+}
+.main {
+  height: 800px;
+  width: 450px;
+  background: black;
+  border: 4px solid rgb(56, 55, 55);
+  border-radius: 30px;
+}
+.sec1 {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  align-items: flex-end;
+}
+.input {
+  width: 440px;
+  height: 80px;
+  box-shadow: none;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 60px;
+
+  text-align: right;
+  direction: ltr;
+}
+.sec2 {
+  width: 100%;
+  height: 65%;
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: repeat(5, 90px);
+  gap: 10px;
+  justify-content: center;
+}
+.btn {
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  background: rgb(74, 74, 74);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divide {
+  color: white;
+}
+.b1 {
+  background: gray;
+}
+.b2 {
+  background: rgb(255, 115, 0);
+}

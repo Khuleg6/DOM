@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Stopwatch</title>
     <link rel="stylesheet" href="style3.css" />
   </head>
   <body>
     <div class="frame">
-      <p class="title">Stopwatch & timer</p>
-      <p class="digit" id="digit">00:00:00</p>
+      <p class="title">Stopwatch</p>
+      <p class="digit" id="digit" aria-live="polite">00:00:00</p>
       <div class="button">
-        <button id="start">Start</button>
-        <button>Stop</button>
-        <button>Reset</button>
+        <button id="start" type="button">Start</button>
+        <button id="stop" type="button" disabled>Stop</button>
+        <button id="reset" type="button">Reset</button>
       </div>
     </div>
 

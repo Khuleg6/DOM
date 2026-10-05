@@ -1,11 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
+
 body {
-  background: #84f5b9;
-  background: linear-gradient(
-    90deg,
-    rgba(132, 245, 185, 1) 0%,
-    rgba(87, 199, 182, 1) 71%
-  );
+  background: #d6dde5;
   height: 100vh;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,45 +17,81 @@ body {
 }
 .sec1 input {
   width: 360px;
-  height: 30px;
-  border: none;
-  box-shadow: none;
-  border-radius: 5px;
+  height: 42px;
+  box-sizing: border-box;
+  padding: 0 14px;
+  background: #f8fafc;
+  color: #172033;
+  font-family: inherit;
+  font-size: 18px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  text-align: end;
 }
+
+.sec1 input:focus {
+  border-color: #7dd3fc;
+}
+
 p {
   padding-left: 20px;
+  font-weight: 600;
 }
 h1 {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 60px;
-  font-weight: 800;
+  color: #263548;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 24px;
 }
 .frame {
   width: 400px;
-  height: 320px;
-  border: 20px white solid;
+  min-height: 320px;
+  padding: 24px 20px;
+  box-sizing: border-box;
   border-radius: 30px;
-  background: #46b3b7;
+  background: #263548;
+  color: #f8fafc;
+  box-shadow: 0 18px 45px rgba(38, 53, 72, 0.25);
 }
 .sec2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
 }
+
+#total {
+  padding: 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
 button {
   width: 80px;
   height: 40px;
-  border-radius: 5px;
+  background: #7dd3fc;
+  color: #172033;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 10px;
   border: none;
-  box-shadow: none;
-  gap: 15px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+button:hover {
+  background: #bae6fd;
+  transform: translateY(-2px);
 }
 .sec3 {
   display: flex;
@@ -66,5 +101,25 @@ button {
 }
 .reset {
   width: 360px;
-  height: 30px;
+  height: 42px;
+  margin-top: 8px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  .frame {
+    width: calc(100% - 32px);
+  }
+
+  .sec1 input,
+  .reset {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

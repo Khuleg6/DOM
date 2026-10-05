@@ -9,11 +9,11 @@ body {
   color: white;
 }
 .main {
-  height: 800px;
-  width: 450px;
+  height: 785px;
+  width: 420px;
   background: black;
-  border: 4px solid rgb(56, 55, 55);
-  border-radius: 30px;
+  border: 4px solid black;
+  border-radius: 50px;
 }
 .sec1 {
   width: 100%;
@@ -22,7 +22,9 @@ body {
   align-items: flex-end;
 }
 .input {
-  width: 440px;
+  caret-color: transparent;
+  width: 420px;
+  outline: none;
   height: 80px;
   box-shadow: none;
   border: none;

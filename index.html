@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DOM ашиглан хийсэн жижиг JavaScript төслүүд" />
+    <title>DOM Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="intro">
+        <p class="label">DOM / дасгал</p>
+        <h1>Жижиг төслүүд</h1>
+        <p class="lead">
+          JavaScript-ээр DOM-ийг удирдаж сурах явцад хийсэн апп-ууд. Бүгд цэвэр
+          HTML, CSS, JS — ямар ч framework байхгүй.
+        </p>
+      </header>
+
+      <ol class="projects">
+        <li>
+          <a class="project" href="calculator.html">
+            <span class="num">01</span>
+            <span class="thumb thumb-calc" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i>
+            </span>
+            <span class="info">
+              <span class="name">Calculator</span>
+              <span class="desc">Энгийн тооны машин. Товч дарах бүрт input-ийн утгыг шинэчилнэ.</span>
+            </span>
+            <span class="tags">click · input</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="project" href="tip.html">
+            <span class="num">02</span>
+            <span class="thumb thumb-text" aria-hidden="true">15%</span>
+            <span class="info">
+              <span class="name">Tip Calculator</span>
+              <span class="desc">Төлбөрийн дүн оруулаад tip-ийн хувийг сонгоход нийт дүнг бодно.</span>
+            </span>
+            <span class="tags">input · event delegation</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="project" href="stopwatch.html">
+            <span class="num">03</span>
+            <span class="thumb thumb-text" aria-hidden="true">00:42</span>
+            <span class="info">
+              <span class="name">Stopwatch</span>
+              <span class="desc">Start, stop, reset бүхий секундомер.</span>
+            </span>
+            <span class="tags">setInterval · disabled</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="project" href="connect4.html">
+            <span class="num">04</span>
+            <span class="thumb thumb-c4" aria-hidden="true">
+              <i></i><i></i><i></i><i></i>
+              <i></i><i class="y"></i><i></i><i></i>
+              <i class="r"></i><i class="r"></i><i class="y"></i><i></i>
+            </span>
+            <span class="info">
+              <span class="name">Connect Four</span>
+              <span class="desc">2 тоглогчийн тоглоом. Дараалсан 4 бөөрөнхий тавьсан нь хожно.</span>
+            </span>
+            <span class="tags">createElement · keyboard</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ol>
+
+      <footer class="foot">
+        <span>4 төсөл</span>
+        <span>HTML · CSS · JavaScript</span>
+      </footer>
+    </div>
+  </body>
+</html>
